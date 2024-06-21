@@ -1,0 +1,95 @@
+body {
+    background-color: #1a202c;
+    color: #cbd5e0;
+}
+.chip {
+    display: inline-block;
+    background-color: #075985;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chip:hover {
+    background-color: #2d3748;
+}
+.relative {
+position: relative;
+width: 100%;
+}
+
+.absolute {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.project-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aspect-ratio-container {
+position: relative;
+width: 100%;
+padding-top: 56.25%;
+}
+
+.project-details {
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-details {
+opacity: 1;
+pointer-events: auto;
+}
+
+#achievements {
+    background-color: #1a202c;
+    color: #cbd5e0;
+}
+
+#achievements h3 {
+    color: #ffffff;
+}
+
+#achievements p {
+    color: #cbd5e0;
+}
+
+#achievements a {
+    color: #38b2ac;
+}
+
+.trophy-icon {
+    font-size: 3rem;
+    color: #fbbf24;
+    transition: transform 0.3s ease-in-out;
+}
+
+#achievements:hover .trophy-icon {
+    transform: scale(1.1);
+}
+
+.bg-gray-700:hover {
+    box-shadow: 0 0 20px #38b2ac; /* Glow effect color */
+}

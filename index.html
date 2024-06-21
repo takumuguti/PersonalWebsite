@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Header Section -->
+    <header class="bg-gray-800 p-6 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-3xl font-bold text-white">Taku Muguti</h1>
+            <div class="block md:hidden">
+                <button id="burger" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex">
+                <a href="#projects" class="text-gray-400 hover:text-white ml-4">Projects</a>
+                <a href="#experience" class="text-gray-400 hover:text-white ml-4">Experience</a>
+                <a href="#education" class="text-gray-400 hover:text-white ml-4">Education</a>
+                <a href="#achievements" class="text-gray-400 hover:text-white ml-4">Achievements</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#projects" class="block text-gray-400 hover:text-white mt-2">Projects</a>
+            <a href="#experience" class="block text-gray-400 hover:text-white mt-2">Experience</a>
+            <a href="#education" class="block text-gray-400 hover:text-white mt-2">Education</a>
+            <a href="#achievements" class="block text-gray-400 hover:text-white mt-2">achievements</a>
+        </div>
+    </header>
+    <!-- Professional Summary -->
+    <section class="container mx-auto p-6 my-12 flex flex-col md:flex-row items-center">
+        <div class="flex-1">
+            <h2 class="text-4xl font-bold mb-4">Software Engineer</h2>
+
+            <p class="text-xl leading-relaxed">
+                I'm Taku Muguti, a skilled Software Engineer who recently relocated to Australia from South Africa and I am actively seeking opportunities to advance my career. I have a Bachelor's Degree in Computer Science and a genuine passion for coding. I am always eager to learn and enjoy collaborating with others to develop innovative solutions to complex software engineering challenges.
+            </p>
+        </div>
+        <div class="flex-1 mt-6 md:mt-0 md:ml-12 flex flex-col items-center">
+            <img src="images/profile.jpg" alt="Your Name" class="rounded-full w-72 h-72 mb-4">
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/in/takumuguti/" class="text-gray-400 hover:text-white" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a href="https://github.com/takumuguti" class="text-gray-400 hover:text-white" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://medium.com/@takumuguti" class="text-gray-400 hover:text-white" aria-label="YouTube">
+                    <i class="fab fa-medium fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-6 my-12">
+        <h2 class="text-4xl font-bold mb-6">iOS Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="project-card relative overflow-hidden bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="relative" style="padding-top: 130%;">
+                    <img src="images/CryptoPowerhouse.png" alt="Project Image" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="project-details opacity-0 transition-opacity duration-300 absolute inset-0 bg-gray-700 bg-opacity-90 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-2">CryptoPowerhouse</h3>
+                    <p class="text-lg mb-4">A cryptocurrency application that connects to the CoinGecko API to retrieve realtime live cryptocurrency data. The application allows users to select their preferred currency and is built using the MVVM architecture.</p>
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">CryptoPowerhouse</h3>
+                <div class="flex flex-wrap">
+                    <span class="chip mr-2 mb-2">SwiftUI</span>
+                    <span class="chip mr-2 mb-2">SwiftCharts</span>
+                    <span class="chip mr-2 mb-2">CoreData</span>
+                </div>
+            </div>
+            <div class="project-card relative overflow-hidden bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="relative" style="padding-top: 130%;">
+                    <img src="images/nyla.png" alt="Project Image" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="project-details opacity-0 transition-opacity duration-300 absolute inset-0 bg-gray-700 bg-opacity-90 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-2">Book tracker</h3>
+                    <p class="text-lg mb-4">This is a book-tracking application that integrates with the Google Books API. It serves as a personal library, enabling users to keep track of the books they are currently reading. The app stores the user's data using SwiftData and is built using the MVVM architecture pattern.</p>
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Book tracker</h3>
+                <div class="flex flex-wrap">
+                    <span class="chip mr-2 mb-2">UIKit</span>
+                    <span class="chip mr-2 mb-2">SwiftData</span>
+                </div>
+            </div>
+            <div class="project-card relative overflow-hidden bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="relative" style="padding-top: 130%;">
+                    <img src="images/weatherApp.png" alt="Project Image" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="project-details opacity-0 transition-opacity duration-300 absolute inset-0 bg-gray-700 bg-opacity-90 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-2">Weather</h3>
+                    <p class="text-lg mb-4">This weather application utilizes the user's location and the Open Weather API to retrieve real-time weather data. Users can also save their favourite locations, allowing them to receive weather updates. This app was built using the MVVM architecture pattern.</p>
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Weather</h3>
+                <div class="flex flex-wrap">
+                    <span class="chip mr-2 mb-2">UIKit</span>
+                    <span class="chip mr-2 mb-2">Core Location</span>
+                    <span class="chip mr-2 mb-2">CoreData</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="container mx-auto p-6 my-12">
+        <h2 class="text-4xl font-bold mb-6">Work Experience</h2>
+        <div class="space-y-6">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2">Software Engineer</h3>
+                <p class="font-semibold">Dataannotation - Australia (Remote)</p>
+                <p class="mb-4 text-gray-400">March 2024 - Present</p>
+                <p>I freelance on Dataannotation's platform to systematically analyze and rate AI responses based on multiple criteria to significantly improve the efficacy of end-user interactions with various AI models.</p>
+                <div class="flex flex-wrap mt-4">
+                    <span class="chip">LLMs</span>
+                    <span class="chip">AI</span>
+                    <span class="chip">Prompt Engineering</span>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2">iOS Software Engineer</h3>
+                <p class="font-semibold">DVT - South Africa (Remote)</p>
+                <p class="mb-4 text-gray-400">Feb 2023 - Feb 2024</p>
+                <p>I excelled in the iOS Development graduate program by earning the highest mark for the capstone assessment. The expertise I gained empowered me to work in cross-functional Agile teams to develop and maintain iOS applications for clients such as Namola and Standard Bank. I worked on various codebases and gained exposure to different languages and architectures, such as VIPER, MVVM, and MVC.</p>
+                <div class="flex flex-wrap mt-4">
+                    <span class="chip">SOLID</span>
+                    <span class="chip">swiftUI</span>
+                    <span class="chip">UIKit</span>
+                    <span class="chip">Objective-C</span>
+                    <span class="chip">Agile</span>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2">Teaching Assistant</h3>
+                <p class="font-semibold">University of Pretoria, South Africa</p>
+                <p class="mb-4 text-gray-400">Aug 2021 - July 2022</p>
+                <p>Utilised my extensive understanding of various subjects to enhance the knowledge of over 100 students in diverse areas, such as Program Design, Operating Systems, and Data Structures and Algorithms.
+                </p>
+                <div class="flex flex-wrap mt-4">
+                    <span class="chip">Algorithms</span>
+                    <span class="chip">Data structures</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">Java</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto p-6 my-12 flex flex-col md:flex-row items-center">
+        <div class="flex-1 md:order-2">
+            <h2 class="text-4xl font-bold mb-4">Education</h2>
+            <p class="text-lg leading-relaxed">
+                I graduated with a degree in Computer Science from the University of Pretoria, South Africa, in 2023. During my studies, I focused on software development fundamentals and computational theory, covering various topics such as algorithms, data structures, and object-oriented programming. These courses gave me a strong foundation for my career in software development.
+                <br><br>
+                My university experience was not just about theoretical learning, but also about practical application. I successfully completed several projects that not only enhanced my skills in software design and development methodologies but also demonstrated my ability to apply these skills in real-world scenarios. One such project was a Netcentric Computer Systems module, where I was part of a team that developed a mobile application. This hands-on experience piqued my interest in mobile development.
+            </p>
+
+        </div>
+        <div class="flex-1 mt-6 md:mt-0 md:mr-12 md:order-1">
+            <img src="images/graduation.JPG" alt="Graduation" class="rounded-lg max-w-full h-auto w-64 md:w-80 mx-auto md:mx-0"> <!-- Adjusted image size and aspect ratio -->
+        </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section id="achievements" class="container mx-auto p-6 my-12">
+        <h2 class="text-4xl font-bold mb-6">Achievements</h2>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center">
+            <i class="fas fa-trophy trophy-icon mr-4"></i>
+            <div>
+                <h3 class="text-2xl font-semibold mb-2">Hackathon Winner</h3>
+                <p class="mb-4">I was honoured to be part of a team of talented individuals who won the Empire Foundation Hackathon.<br> We created and engineered an educational app that stood out from the competition.</p>
+                <a href="https://www.linkedin.com/posts/takumuguti_pressrelease-educationhackathon-eventhighlights-activity-6960927612240056320-m-Xp?utm_source=share&utm_medium=member_desktop" class="text-teal-400 hover:underline">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container mx-auto p-6 my-12">
+        <h2 class="text-4xl font-bold mb-6">Hobbies & Interests</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class="fas fa-music fa-3x text-teal-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Music</h3>
+                <p class="text-center">Fun fact about me I can play piano and guitar.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class="fas fa-dumbbell fa-3x text-teal-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Weight Lifting</h3>
+                <p class="text-center">I love getting stronger and more disciplined by lifting weights.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class="fas fa-book fa-3x text-teal-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Reading</h3>
+                <p class="text-center">I am an avid reader of technology & self-help books.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('burger').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
